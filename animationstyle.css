@@ -1,0 +1,86 @@
+
+.flyIn{
+    animation: flyIn 1.5s ease;
+}
+
+.flyIn.active {
+    opacity: 1;
+}
+
+.fading {
+    animation: fadeIn 1.5s ease; 
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.fade-in.active {
+    opacity: 1;
+}
+
+.slide-in-from-left {
+    animation: slideInFromLeft 1s ease forwards;
+}
+
+.slide-in-from-right {
+    animation: slideInFromRight 1s ease forwards; 
+}
+
+.flyButtom{
+    animation: flyButtom 1.5s ease;
+}
+
+.flyButtom.active {
+    opacity: 1;
+}
+
+@keyframes flyIn {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes flyButtom {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
